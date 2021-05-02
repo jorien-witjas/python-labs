@@ -7,3 +7,10 @@ translated to pig latin by moving the first letter to the end, followed by "ay".
 For example: ryan -> yanray, caden -> adencay
 
 '''
+
+name = input("please state your name: ")
+
+print(name[1:]+name[0]+"ay")
+
+
+#question: is it true that you can only .append() a list?

@@ -7,7 +7,16 @@ CHALLENGE: Can you change the script so that it counts the occurrence of each in
 
 '''
 x = input("Enter a sentence: ")
-vowel = [a,e,o,i,u]
+vowel = "a","e","i","o","u"
 y = x.count(vowel)
 print(y)
 
+#CHALLENGE
+x = input("Enter a sentence: ")
+vowela = "a"
+vowele = "e"
+voweli = "i"
+vowelo = "o"
+vowelu = "u"
+y = x.count(vowel)
+print(y)
