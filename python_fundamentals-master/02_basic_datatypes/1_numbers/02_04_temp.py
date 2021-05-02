@@ -10,3 +10,6 @@ Output should read like - "81.32 degrees fahrenheit = 27.4 degrees celsius"
 
 
 '''
+F = input("Give a degree in Fahrenheit")
+C = (F - 32) * (5 / 9)
+Print("81.32 degrees fahrenheit = ")

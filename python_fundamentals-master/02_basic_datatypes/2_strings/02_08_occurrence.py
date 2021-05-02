@@ -7,3 +7,6 @@ Letter input: o
 Result: 4
 
 '''
+x = input("Enter a sentence: ")
+y = input("Enter a letter: ")
+print("Result: ", x.index(y))

@@ -6,3 +6,8 @@ CHALLENGE: Can you change the script so that it counts the occurrence of each in
            in the string and print a count for each of them?
 
 '''
+x = input("Enter a sentence: ")
+vowel = [a,e,o,i,u]
+y = x.count(vowel)
+print(y)
+

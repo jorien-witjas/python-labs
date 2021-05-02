@@ -10,3 +10,10 @@ Demonstrate how to:
     Take note of what information is lost when some conversions take place.
 
 '''
+
+print(float(4))
+print(int(4.5))
+print(3//4.5)
+x = int(input("Enter a value: "))
+y = int(input("Enter a second value: "))
+print (x * y)

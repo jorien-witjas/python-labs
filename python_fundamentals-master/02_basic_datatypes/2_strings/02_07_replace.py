@@ -8,3 +8,8 @@ Result: #ore python progra##ing please
 
 '''
 
+x = input("Enter a sentence: ")
+y = input("Enter a symbol: ")
+a = x[0]
+z = x.replace(a,y)
+print(z)
