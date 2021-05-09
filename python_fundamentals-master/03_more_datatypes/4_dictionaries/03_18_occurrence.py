@@ -6,3 +6,15 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+new_dict = {}
+sentence = "Saturdaymorning"
+unique_char = ()
+
+for element in sentence:
+    if element not in sentence:
+        unique_char.append(element)
+    occurence = sentence.count(element)
+
+    new_dict[element] = occurence
+print(new_dict)
+

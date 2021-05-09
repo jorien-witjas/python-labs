@@ -6,5 +6,32 @@ Then print out the 9th, 7th, 5th, 3rd, and 1st.
 Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
+
+first try:
+count = 0
+x = [10, 21, 3, 43, 15, 87, 7, 811, 9, 10]
+for i in x:
+    if count % 2 == 1:
+        print(i)
+    count += 1
+
+count = 10
+for i in x:
+    if count % 2 == 0:
+        print(i)
+    count -= 1
 '''
-print("hello")
+
+
+x = [10, 21, 3, 43, 15, 87, 7, 811, 9, 10]
+count = 0
+for i in x:
+    if count % 2 == 1:
+        print(i, end=" ")
+    count += 1
+x.reverse()
+count = 0
+for i in x:
+    if count % 2 == 0:
+        print(i, end=" ")
+    count +=1

@@ -9,3 +9,19 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+#trying to get user input into a list:
+x = (input("enter a series of 10 numbers divided by a space: "))
+x.split()
+print(x)
+# this is not the  right way. But skipping this for now.
+
+#exercise
+x = [2, 3, 56, 645, 78, 3, 9, 97, 34, 450]
+a = max(x)
+print(a)
+
+#challenge:
+count = 0
+for king_george in x:
+    count += king_george
+print(count)
