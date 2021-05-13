@@ -10,3 +10,11 @@ NOTE: Check out the Python docs and see whether you can come up with a solution,
       Feel free to discuss any questions you have with your mentor and on the forum!
 
 '''
+dict = {"item1": 5, "item2": 6, "item3": 1}
+list = list(dict.items())
+
+sorted_list = sorted(list, key=lambda item : item[1])
+
+print(sorted_list)
+
+# I do not understand why to use item:item[1] and how python knows what  i mean.

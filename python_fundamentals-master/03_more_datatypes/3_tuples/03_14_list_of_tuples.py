@@ -15,8 +15,8 @@ print(my_input_list)
 #make each item of my_input_list into a tuples
 y = []
 for item in my_input_list:
-    tuple(item)
-    y.append(tuple(item))
+    tupled_item = tuple(item)
+    y.append(tupled_item)
 print(y)
 
 

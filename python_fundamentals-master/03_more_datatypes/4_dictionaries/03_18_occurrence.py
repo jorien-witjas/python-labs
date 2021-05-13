@@ -10,11 +10,19 @@ new_dict = {}
 sentence = "Saturdaymorning"
 unique_char = ()
 
-for element in sentence:
-    if element not in sentence:
-        unique_char.append(element)
-    occurence = sentence.count(element)
+# to delete the occurence variable
+# for element in sentence:
+#     if element not in unique_char:
+#         unique_char.append(element)
+#     occurence = sentence.count(element)
+#
+#     new_dict[element] = occurence
+# print(new_dict)
 
-    new_dict[element] = occurence
+for element in sentence:
+    if element not in unique_char:
+       unique_char.append(element)
+       print(unique_char)
+    new_dict[element] = sentence.count(element)
 print(new_dict)
 

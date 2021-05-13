@@ -10,4 +10,6 @@ For example if n is 3, you print:
 
 '''
 
-n = 5
+n = int(input("please enter a number: "))
+for n in range(n):
+    print("*" * n)

@@ -7,3 +7,10 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+
+number_1 = 1
+number_2 = 100
+sum_number = 0
+for num in range(number_1, number_2 + 1):
+    sum_number += num
+print(sum_number)

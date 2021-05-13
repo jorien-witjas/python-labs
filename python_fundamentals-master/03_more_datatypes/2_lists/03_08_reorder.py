@@ -23,15 +23,20 @@ for i in x:
 '''
 
 
-x = [10, 21, 3, 43, 15, 87, 7, 811, 9, 10]
-count = 0
-for i in x:
-    if count % 2 == 1:
-        print(i, end=" ")
-    count += 1
-x.reverse()
-count = 0
-for i in x:
-    if count % 2 == 0:
-        print(i, end=" ")
-    count +=1
+# x = [10, 21, 3, 43, 15, 87, 7, 811, 9, 10]
+# count = 0
+# for i in x:
+#     if count % 2 == 1:
+#         print(i, end=" ")
+#     count += 1
+# x.reverse()
+# count = 0
+# for i in x:
+#     if count % 2 == 1:
+#         print(i, end=" ")
+#     count +=1
+
+#try after some Gilad-input :)
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+updated_x = x[1::2] + x[-2::-2]
+print(updated_x)
