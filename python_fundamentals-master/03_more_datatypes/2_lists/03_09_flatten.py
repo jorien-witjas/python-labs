@@ -41,3 +41,20 @@ for item in start_list_2:
 print(flattened_list)
 
 
+
+start_list_2 = [[1,2,3],4,5,[6,7,[8,[9,8,7],9],2]]
+flattened_list = []
+while True:
+    list_exists = False
+    for item in start_list_2:
+        if isinstance(item, list):
+            flattened_list += item
+            list_exists = True
+        else:
+            flattened_list.append(item)
+    start_list_2 = flattened_list
+    flattened_list = []
+    if list_exists == False:
+        break
+
+print(start_list_2)

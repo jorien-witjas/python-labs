@@ -21,4 +21,3 @@ while index < len(fruit):
     print(letter)
     index = index + 1
 
-

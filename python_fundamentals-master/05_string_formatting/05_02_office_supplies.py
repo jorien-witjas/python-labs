@@ -25,3 +25,11 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for dic in office:
+    full_name = dic["full_name"]
+    name = full_name.split()
+    upper_name = name[1].upper()
+    item = dic["item"]
+    print(f"{upper_name}, {name[0]}, {item:>20}")
+
