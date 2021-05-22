@@ -23,3 +23,4 @@ def function_3(argement_3):
 print(function_1(list_1))
 print(function_2(list_1))
 print(function_3(list_1))
+
