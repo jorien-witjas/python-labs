@@ -54,3 +54,5 @@ sofa = furniture("purple", "huge", "sofa", "livingroom")
 chair = furniture("red", "petite", "chair", "diningroom")
 print(sofa)
 print(coat)
+
+print("hi")
