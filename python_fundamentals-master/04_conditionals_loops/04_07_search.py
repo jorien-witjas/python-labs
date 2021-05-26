@@ -5,11 +5,10 @@ Use while loop to find the number - when the number is found exit the loop and p
 
 '''
 
-number = int(input("please enter a number between 0 and 10000000: "))
-
+number = int(input("please enter a number between 0 and 1000000000: "))
 n = 0
 
-while n < 10000:
+while n < 1000000000:
     if n != number:
         n += 1
     elif n == number:

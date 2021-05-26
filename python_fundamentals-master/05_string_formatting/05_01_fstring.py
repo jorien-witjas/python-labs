@@ -24,13 +24,11 @@ famous_quotes = [
 for dic in famous_quotes:
     name = dic['full_name']
     name_2 = name.split()
+    name_3 = name_2[::-1]
+    name_4  = ""
+    for partname in name_3:
+        name_4 += (partname + " ")
     quote = dic['quote']
-    print(f"{quote} - {name_2[1]}, {name_2[0]}")
+    print(f"{quote} - {name_4}")
 
 
-list_3 = [4,5,7,8,9,0,2,4,6,7]
-
-print(list_3[1 + 3])
-import random
-hand_computer = random.randint(0,2)
-print(hand_computer)

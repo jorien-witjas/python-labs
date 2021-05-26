@@ -20,15 +20,15 @@ def division_2(number):
         return True
     else:
         return False
-print(division(hi))
+print(division(number))
 
 # take in a number from the user between 1 and 1,000,000,000
 
 # call your functions, passing in the user input as the arguments, and set their output equal to new variables
-print(division(hi))
-output = division(hi)
+print(division(number))
+output = division(number)
 
-print(division_2(hi))
-output_2 = division_2((hi))
+print(division_2(number))
+output_2 = division_2((number))
 # print your new variables to display the results
 print(output, output_2)

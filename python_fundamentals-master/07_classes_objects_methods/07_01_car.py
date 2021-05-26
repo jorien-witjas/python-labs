@@ -9,3 +9,21 @@ Create at least two different objects of this Car class and demonstrate
 changing the objects attributes.
 
 '''
+
+class car():
+    def __init__(self, model, year, max_speed):
+        self.model = model
+        self.year = year
+        self.max_speed = int(max_speed)
+
+    def speed_up(self, speed):
+        print("max_speed is " + (int(speed) + int(self.max_speed))
+
+smart = car("smart", "1993", 210)
+print(smart.model)
+print(smart.year)
+print(smart.speed_up(5))
+volvo = car("volvo", "2010", 260)
+print(volvo.model)
+print(volvo.year)
+print(volvo.speed_up(5))
