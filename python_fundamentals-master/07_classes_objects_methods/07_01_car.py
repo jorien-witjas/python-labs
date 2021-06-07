@@ -10,20 +10,24 @@ changing the objects attributes.
 
 '''
 
-class car():
+class Car():
     def __init__(self, model, year, max_speed):
         self.model = model
         self.year = year
         self.max_speed = int(max_speed)
+    def speed_up(self):
+        self.speed_up = self.max_speed + 5
+        return f"max_speed is {self.speed_up}"
+    def __str__(self):
+        return f"The {self.model} is from {self.year} and has a max speed of {self.speed_up}"
+    # def brake(self):
 
-    def speed_up(self, speed):
-        print("max_speed is " + (int(speed) + int(self.max_speed))
 
-smart = car("smart", "1993", 210)
-print(smart.model)
-print(smart.year)
-print(smart.speed_up(5))
-volvo = car("volvo", "2010", 260)
-print(volvo.model)
-print(volvo.year)
-print(volvo.speed_up(5))
+car_1 = Car('smart', '1993', 210)
+car_2 = Car('volvo', '2010', 260)
+
+print(car_1.speed_up())
+print(car_1)
+
+print(car_2.speed_up())
+print(car_2)
