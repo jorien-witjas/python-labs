@@ -24,7 +24,7 @@ print(rec_1)
 class circle:
     def __init__(self, radius, area, circumference):
         self.radius = radius
-        self.area = 3.1415 * self.radius * self.radius
+        self.area = (3.1415 * self.radius ** 2)
         self.circumference = 2 * 3.1415 * self.radius
     def __str__(self):
         return f"the area of the circle is {self.area} and the circumference of the circle is {self.circumference}"
