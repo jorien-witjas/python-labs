@@ -15,8 +15,9 @@ class Car():
         self.model = model
         self.year = year
         self.speed = speed
-    def speed_up(self, speed_up):
-        self.speed_up = (self.speed + 5)
+    def speed_up(self, speed_up, accelate):
+        self.accelarate = 5
+        self.speed_up = (self.speed + self.accelarate)
         return f"max_speed is {self.speed_up}"
     def __str__(self):
         return f"The {self.model} is from {self.year} and has a max speed of {self.speed_up}"
@@ -26,8 +27,8 @@ class Car():
 car_1 = Car('smart', '1993', 210)
 car_2 = Car('volvo', '2010', 260)
 
-print(car_1.speed_up(210))
-print(car_1.speed_up(210))
+print(car_1.speed_up(210, 5))
+print(car_1.speed_up(210, 5))
 print(car_1)
 
 print(car_2.speed_up(260))

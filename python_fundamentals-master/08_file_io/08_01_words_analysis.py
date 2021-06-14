@@ -7,20 +7,27 @@ Write a script that reads in the words from the words.txt file and finds and pri
 
 
 '''
-with open("words.txt" , "r") as f:
+with open("words.txt" , "r+") as f:
     word_min = "hello"
     word_max = ""
+    word_max_len = 0
     words_min = []
     words_max = []
     total_num_words = 0
-    #not great, as it will not give the tie for word_max:
+
     for word in f:
         if len(word) <= len(word_min):
             word_min = word
             words_min.append(word_min.strip())
-        if len(word) >= len(word_max):
-            word_max = word
+        if len(word) == word_max_len:
+            words_max.append(word)
+        elif len(word) > word_max_len:
+            words_max = [word]
+            word_max_len = len(word)
         total_num_words += 1
+
     print(words_min)
-    print(word_max)
+    print(words_max)
     print(total_num_words)
+
+#Debugger is great :D
