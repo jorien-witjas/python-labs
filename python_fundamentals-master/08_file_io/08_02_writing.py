@@ -10,7 +10,7 @@ with open("words.txt", "r") as f_order:
 
 with open("words_reverse.txt", "w") as f_reversed:
     f_reversed = words.reverse()
-    print(f_reversed.strip())
+    print(f_reversed.strip())    #why is f_reversed a NoneType?
 
 
     #         = f_list[::-1]
