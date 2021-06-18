@@ -16,7 +16,7 @@ Cars, animals, card games, sports teams, trees, people etc...
 #class food
 class food:
     def __init__(self, color, size, taste, sort):
-        self.color = color              #objects (/attributes?)
+        self.color = color              #attributes
         self.size = size
         self.taste = taste
         self.sort = sort
@@ -28,7 +28,7 @@ class clothes:
         self.size = size
         self.type = type
     def __str__(self):
-        return f"my {self.color} {self.type} is too {self.size}"
+        return f"my {self.color} {self.type} is {self.size}"
 class furniture:
     def __init__(self, color, size, type, location):
         self.color = color
@@ -36,17 +36,17 @@ class furniture:
         self.type = type
         self.location = location
     def __str__(self):
-        return f"the {self.size} {self.color} {self.type} is in  the {self.location}"
+        return f"the {self.size} {self.color} {self.type} is in the {self.location}"
 
 
-#instances
+#object/instance
 tomato = food("red", "big", "good", "veggie")
 apple = food("green", "small", "tasty", "fruit")
 print(tomato)
 print(apple)
 
-jeans = clothes("blue","trousers", "medium")
-coat = clothes("green", "outerwear", "large")
+jeans = clothes("blue", "medium", "trousers")
+coat = clothes("green", "large", "outerwear")
 print(jeans)
 print(coat)
 
@@ -54,5 +54,3 @@ sofa = furniture("purple", "huge", "sofa", "livingroom")
 chair = furniture("red", "petite", "chair", "diningroom")
 print(sofa)
 print(coat)
-
-print("hi")

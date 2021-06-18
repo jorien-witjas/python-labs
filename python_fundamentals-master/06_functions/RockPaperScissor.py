@@ -7,10 +7,9 @@
 #     # hand_computer = random.randint(0, 2)
 #     return hand_player, hand_computer
 # print(get_hand(hand_player))
-
+import random
 hand_player = ""
 def determine_winner(hand_player):
-    import random
     hand_player = int(input("Please enter a number between 0 - 2: "))
     hand_computer = random.randint(0, 2)
     print(hand_player, hand_computer)

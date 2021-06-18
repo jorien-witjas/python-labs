@@ -12,3 +12,5 @@ if number %3 == 0:
     print(f"the result is: ", number / 3)
 else:
     print("your number is not divisible by 3")
+
+print('hello')
