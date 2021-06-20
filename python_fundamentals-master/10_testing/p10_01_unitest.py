@@ -11,7 +11,8 @@ because Python modules can't begin with a number.
 
 '''
 
-
 def get_email(f_name, l_name, domain):
-    email = f_name, l.name, "@", domain
+    email = f_name, l_name, "@", domain
     return print(email)
+
+
