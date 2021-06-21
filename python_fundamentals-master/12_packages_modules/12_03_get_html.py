@@ -9,3 +9,11 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+
+import requests
+
+url = "https://codingnomads.co/"
+r = requests.get(url)
+
+for lines in r.readlines():
+    print(lines)
