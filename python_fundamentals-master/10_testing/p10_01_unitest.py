@@ -10,9 +10,14 @@ into different files. Note that you will run into an error when attempting to im
 because Python modules can't begin with a number.
 
 '''
-
+#
 def get_email(f_name, l_name, domain):
-    email = f_name, l_name, "@", domain
-    return print(email)
+    email = f_name + l_name + "@" + domain
+    return email
 
-
+if __name__ == '__main__':
+    f_name = "gilad"
+    l_name = "gressel"
+    domain = "hotmail.com"
+    mail_gilad = get_email(f_name,l_name,domain)
+    print(mail_gilad)

@@ -10,9 +10,5 @@ into different files. Note that you will run into an error when attempting to im
 because Python modules can't begin with a number.
 
 '''
-
-def get_email(f_name, l_name, domain):
-    email = f_name, l_name, "@", domain
-    return print(email)
-
+#see p10_01_unittest.py
 

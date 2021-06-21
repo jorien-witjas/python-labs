@@ -8,7 +8,7 @@ Write a script that reads in the words from the words.txt file and finds and pri
 
 '''
 with open("words.txt" , "r+") as f:
-    word_min = "hello"
+    word_min = str("inf")
     word_max = ""
     word_max_len = 0
     words_min = []

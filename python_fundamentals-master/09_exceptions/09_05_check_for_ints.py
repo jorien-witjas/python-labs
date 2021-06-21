@@ -7,10 +7,11 @@ The script should keep prompting the user until they enter an integer.
 
 '''
 
-try:
-    num_1 = int(input("please give me a number: "))
-    num_2 = int(input("please give me another number: "))
-except ValueError:
-    print("please enter a number and no letters")
-else:
-    print("good job!")
+while True:
+    try:
+        num_1 = int(input("please give me a number: "))
+    except ValueError:
+        print("please enter a number and no letters")
+    else:
+        print("good job!")
+        break
