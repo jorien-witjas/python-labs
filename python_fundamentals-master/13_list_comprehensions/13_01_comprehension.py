@@ -9,3 +9,5 @@ word = "CodingNomads"
 result_list = ['C', 'o', 'd', 'i', 'n', 'g', 'N', 'o', 'm', 'a', 'd', 's']
 
 '''
+
+print([x for x in "codingNomads"])
