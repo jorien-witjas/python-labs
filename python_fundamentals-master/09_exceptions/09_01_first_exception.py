@@ -8,3 +8,9 @@ print(list_[1])
 This raises and exception that needs to be handled.
 
 '''
+
+try:
+    list_ = ["today it is sunny"]
+    print(list_[1])
+except IndexError:
+    print("first give me another item in the list")

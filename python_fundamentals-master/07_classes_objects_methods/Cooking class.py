@@ -6,4 +6,4 @@ class CookingSoup:
         self.ingredients = ingredients
         self.amount = amount
 
-    
+soup_1 = CookingSoup(

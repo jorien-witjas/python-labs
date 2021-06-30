@@ -22,13 +22,13 @@ class CityActivities:
         self.amount_pp = amount_pp
 
 class Restaurants(CityActivities):
-    def __init__(self, activity, season, time, amount_pp, sort):
-        super().__init__(sort)
-        self.sort = sort
+    def __init__(self, activity, season, time, amount_pp, cuisine_type):
+        super().__init__(activity, season, time, amount_pp)
+        self.cuisine_type = cuisine_type
 
 class Pubs(Restaurants):
     pass
 
 Volt = Pubs("eating", "all", "evening", "4_max", "pub")
 
-print(volt.activity)
+print(Volt.activity)

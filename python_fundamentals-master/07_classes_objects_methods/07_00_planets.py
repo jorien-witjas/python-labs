@@ -16,3 +16,13 @@ Jupiter = Planet("jupiter", "big", "Green")
 print(Jupiter.name)
 print(Jupiter.size)
 print(Jupiter.colour)
+
+
+class MyCustomException(Exception):
+    def __init__(self, value):
+        self.value = value
+
+try:
+    raise (MyCustomException(10))
+except MyCustomException as error:
+    print('A New Exception occurred:', error.value)

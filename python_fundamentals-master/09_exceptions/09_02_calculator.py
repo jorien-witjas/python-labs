@@ -8,3 +8,13 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+num_1 = input("please give me a number: ")
+num_2 = input("please give me another number: ")
+try:
+    quotient = int(num_1) / int(num_2)
+    print(quotient)
+except ValueError:
+    print("please enter a number and no letters")
+except ZeroDivisionError:
+    print("please pick another number than zero")

@@ -21,7 +21,7 @@ CLASSES AND INHERITANCE
 
 class Movie:
     def __init__(self, year, title):
-        self.year =  year
+        self.year = year
         self.title = title
 
 class Romcom(Movie):
@@ -30,9 +30,10 @@ class Romcom(Movie):
 class ActionMovie(Movie):
     def __init__(self, year, title, pg):
         super().__init__(year, title)
+        self.pg = pg
         self.pg = 13
 
 m_1 = Romcom(1990, "Nothing Hill")
 m_2 = ActionMovie(2003, "Die Hard", 2456)
 
-print(m_2.pg)
+print(m_2.title)
